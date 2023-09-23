@@ -214,27 +214,30 @@ main{
         padding: 30px 35px;
     }
     .heading{
-        height: 40%;
+        height: 35%;
+
     }
     .para{
         height: 40%;
-        margin-bottom: 20px;
-        margin-top: -10px;
+        display: flex;
+        align-items: flex-end;
     }
     .media{
         height: 20%;
+        margin-top: 30px;
     }
     .heading h1{
         font-size: 16px;
+        line-height: 1.4rem;
 
     }
     .para p{
         font-size: 13px;
+        line-height: 1.2rem;
     }
 
     .media{
         font-size: 13px;
-        /* margin-top: 10px; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -249,18 +252,18 @@ main{
     .media .share{
         height: 73%;
         width: 15%;
-        z-index: 10;
+        z-index: 2;
     }
 
     .media .inside{
         z-index: 1;
         position: absolute;
-        top: 0px;
+        top: -17px;
         right: inherit;
         display: flex;
         visibility: hidden;
         border-radius:0 0 10px 10px;
-        height: 64px;
+        height: 72px;
         width: 327px;
         background-color: #48556A;
         justify-content: space-evenly ;
