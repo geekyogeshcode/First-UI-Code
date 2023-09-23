@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+
+
+*{
+    background-color: #2b2b2b;
+}
+header{
+    background-color: #2b2b2b;
+    color: #e4e4e4;
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    padding: 10px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 70px;
+    height: auto;
+    margin-left: 50px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+    
+}
+
+nav ul li{
+    margin-right: 20px;
+   
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+nav ul li:first-child{
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #4d4c4c;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #e4e4e4;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;   
+}
+
+nav ul li:last-child{
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #bfaff2;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #2b2b2b;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;   
+}
+nav{
+    margin-left: auto;
+}
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+   
+}
+
+.hero-content{
+    text-align: center;
+    padding-right: 30px;
+}
+
+.hero-content h1{
+    font-size: 50px;
+    color: #e4e4e4;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 15px;
+    color: #e4e4e4;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 50px;
+    justify-content: space-between;
+
+}
+
+.hero-button{
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #f8d57e;
+    font-family: 'Inter', sans-serif;
+    color: #2b2b2b;
+    font-weight:bolder;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+
+}
+.hero-image {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        /* Remove the margin and adjust the width */
+        margin: 0;
+        width: 80%; /* You can adjust the width as needed */
+    }
+}
+
+
+.trust{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 0;
+}
+
+@media (max-width: 768px){
+    .trust{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.line1 , .line2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dash-demo {
+    display: flex;
+    justify-content: center;
+    margin: 0; /* Remove margin for smaller screens */
+}
+
+.dash-demo img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .dash-demo {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center elements horizontally */
+    }
+
+    .dash-demo img {
+        margin: 20px 0; /* Add spacing between the elements */
+    }
+}
+
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+@media (max-width: 768px){
+    .features{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+.feature1, .feature2, .feature3  { 
+    padding: 50px; 
+    font-family: 'Inter', sans-serif;
+}
+@media (max-width: 768px){
+    .feature1 h1,
+    .feature2 h1,
+    .feature3 h1{
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+
+.feature1 h1{
+    color: #e4e4e4;   
+}
+.feature2 h1{
+    color: #e4e4e4
+}
+.feature3 h1{
+    color: #e4e4e4
+}
+
+.feature1 p{
+    color: #4d4c4c;
+}
+
+.feature2 p{
+    color: #4d4c4c;
+}
+
+.feature3 p{
+    color: #4d4c4c;
+}
+
+
+.feedback{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid #e4e4e4; 
+    border-radius: 10px; 
+    padding: 50px; 
+    margin: 20px
+   
+}
+
+@media (max-width: 768px) {
+    .feedback {
+        flex-direction: column; /* Stack elements vertically as columns */
+        align-items: center; /* Center elements horizontally */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+.feedback-heading h1{
+    font-family: 'Inter', sans-serif;
+    color: #e4e4e4;
+    font-size: 50px;
+}
+
+@media (max-width: 768px){
+    .feedback-heading h1{
+        font-size: 30px;
+    }
+}
+
+.feedback img{
+    max-width: 100px;
+    max-height: 100px;
+    align-items: center;
+    
+}
+
+.feedback h1{
+    font-family: 'Inter', sans-serif;
+    color: #e4e4e4;
+    font-size: medium;
+}
+.feedback p{
+    font-family: 'Inter', sans-serif;
+    color: #4d4c4c;
+    font-size: small;
+    width: 200px;
+}
+
+.feedback-heading {
+    font-family: 'Inter', sans-serif;
+    color: #e4e4e4;
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 20px; /* Add some spacing between the heading and feedback elements */
+}
+
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 100px;
+
+}
+.left{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 150px;
+}
+
+.left h1{
+    font-family: 'Inter', sans-serif;
+    color: #e4e4e4;
+    font-size: 50px;
+}
+.left p{
+    font-family: 'Inter', sans-serif;
+    color: #4d4c4c;
+    font-size: 15px;
+}
+
+.left a{
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #f8d57e;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #2b2b2b;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;
+    max-width: 70px;
+}
+
+
+.right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: end;  
+    /* padding: 20px; */
+    margin-left: 100px;
+}
+
+.right-img img{
+    max-width: 85%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer-credit p{
+    font-family: 'Inter', sans-serif;
+    color: #e4e4e4;
+    font-size: 20px;
+    justify-content: center;
+}
